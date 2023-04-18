@@ -1,4 +1,6 @@
-﻿namespace lab3;
+﻿// working with collections
+
+namespace lab3;
 using System;
 
 public class Program
