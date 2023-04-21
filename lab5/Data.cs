@@ -8,6 +8,6 @@ public class Data {
 
     public override string ToString()
     {
-        return "Dane producenta numer " + producerNumber;
+        return "Data from producer " + producerNumber;
     }
 }

@@ -18,7 +18,7 @@ public class Producer
     {
         while (!end)
         {
-            Console.WriteLine("Producent " + number + " czeka");
+            Console.WriteLine("Producer " + number + " is waiting..");
             parent.producerSemaphore.WaitOne();
             for (int i = 0; i < parent.criticalConsumerNumber; i++)
             {

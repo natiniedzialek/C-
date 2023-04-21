@@ -18,12 +18,11 @@ public class Consumer
     {
         while (!end) 
         {
-            Console.WriteLine("Konsument " + number + " czeka");
+            Console.WriteLine("Consumer " + number + " is waiting..");
             parent.consumerSemaphore.WaitOne();
             if (parent.dataList.Count > 0) 
             {
                 int producerNumber = parent.dataList[0].producerNumber;
-                // jeśli mamy już zapisany numer producenta
                 if (memory.ContainsKey(producerNumber)) 
                 {
                     memory[producerNumber] += 1;
